@@ -5,12 +5,13 @@ import image2 from "@/assets/image2.png";
 import image3 from "@/assets/image3.png";
 import image4 from "@/assets/image4.png";
 import image5 from "@/assets/image5.png";
-import image6 from "@/assets/image6.png";
+import image6 from "@/assets/Circles.png";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
-import Class from "./Price";
+import Price from "./Price";
+import IconTitle from "@/assets/IconTitle.jpg";
 
-const prices: Array<PriceType> = [
+const priceEyeBrown: Array<PriceType> = [
   {
     name: "Lash ripsien kestotaivutus & värjäys/ Lash lift and tint (40 min) 55 €",
     description:
@@ -29,23 +30,49 @@ const prices: Array<PriceType> = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: image3,
   },
+];
+const priceEyeLash: Array<PriceType> = [
   {
-    name: "Adventure Classes",
+    name: "Uudet Ripsienpidennykset Volyymit (5–8D)/ New Volume Lash Extensions (5–8D)  (135 min) 115 €",
+    description:
+      "Pituudet: 6–16 mm | Kaaret: C,CC,D Lengths: 6–16 mm | Curls: C,CC,D",
+    image: image1,
+  },
+  {
+    name: "Uudet Volyymit luonnolliset/ Hybridi ripsienpidennykset (2–5D)/ New Natural Volumes/ Hybrid Lash Extensions (2–5D) (120 min) 95€",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    image: image2,
+  },
+  {
+    name: "Volume/Hybrid Maintenance",
+    description:
+      "-Huolto 60 min (n. 2 vk): 55€ -Huolto 75 min (n. 3 vk) 60€ -Pitkähuolto 75 min (n. 4 vk): 70€ Pituudet: 6–16 mm | Kaaret: C,CC,D",
+    image: image3,
+  },
+  {
+    name: "Volyymihuolto toisesta salongista max. 3 vk/ Volume Lash Maintenance from Another Salon max. 3 weeks (75 min) 75 €",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: image4,
   },
   {
-    name: "Fitness Classes",
+    name: "Megavolyymit (9–18D)/ Mega Volume Lashes (9–18D) (180 min) 150 €",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: image5,
   },
   {
-    name: "Training Classes",
+    name: "Mega Volume Maintenance",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: image6,
+  },
+  {
+    name: "Classic Maintenance",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    image: IconTitle,
   },
 ];
 
@@ -83,12 +110,14 @@ const PriceLists = ({ setSelectedPage }: Props) => {
         </motion.div>
         <hr className="mx-auto mb-4 h-[2px] w-3/6 bg-black" />
         <div className="flex justify-center ">
-          <p className=" text-2xl ">EYE BROWN</p>
+          <p className=" font-montserrat text-2xl font-bold text-primary-500">
+            EYE BROWN
+          </p>
         </div>
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden mb-20">
-          <ul className="w-[2800px] ">
-            {prices.map((item: PriceType, index) => (
-              <Class
+        <div className="mt-10 mb-20 h-[353px] w-full overflow-x-hidden overflow-y-hidden">
+          <ul className="flex w-auto justify-center">
+            {priceEyeBrown.map((item: PriceType, index) => (
+              <Price
                 key={`${item.name}-${index}`}
                 name={item.name}
                 description={item.description}
@@ -98,12 +127,14 @@ const PriceLists = ({ setSelectedPage }: Props) => {
           </ul>
         </div>
         <div className="flex justify-center ">
-          <p className=" text-2xl ">EYE LASH</p>
+          <p className=" font-montserrat text-2xl font-bold text-primary-500">
+            EYE LASH
+          </p>
         </div>
         <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-          <ul className="w-[2800px] ">
-            {prices.map((item: PriceType, index) => (
-              <Class
+          <ul className="w-[3500px] ">
+            {priceEyeLash.map((item: PriceType, index) => (
+              <Price
                 key={`${item.name}-${index}`}
                 name={item.name}
                 description={item.description}
