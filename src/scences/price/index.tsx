@@ -14,64 +14,67 @@ import IconTitle from "@/assets/IconTitle.jpg";
 const priceEyeBrown: Array<PriceType> = [
   {
     name: "Lash ripsien kestotaivutus & värjäys/ Lash lift and tint (40 min) 55 €",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image1,
+    description: "",
+    image: IconTitle,
   },
   {
     name: "Kulmien laminointi/ Brow Lamination/ Brow Lift (60 min) 59€",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image2,
+    description: "",
+    image: IconTitle,
   },
   {
-    name: "Ab Core Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image3,
+    name: "Combo: Kulmien laminointi & ripsien kestotaivutus/ Brow Lamination & Lash Lift (60 min) 100 €",
+    description: "",
+    image: IconTitle,
   },
 ];
 const priceEyeLash: Array<PriceType> = [
   {
     name: "Uudet Ripsienpidennykset Volyymit (5–8D)/ New Volume Lash Extensions (5–8D)  (135 min) 115 €",
-    description:
-      "Pituudet: 6–16 mm | Kaaret: C,CC,D Lengths: 6–16 mm | Curls: C,CC,D",
-    image: image1,
+    description: "Lengths: 6–16 mm | Curls: C,CC,D",
+    image: IconTitle,
   },
   {
     name: "Uudet Volyymit luonnolliset/ Hybridi ripsienpidennykset (2–5D)/ New Natural Volumes/ Hybrid Lash Extensions (2–5D) (120 min) 95€",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image2,
+    description: "Lengths: 6–16 mm | Curls: C,CC,D",
+    image: IconTitle,
+  },
+  {
+    name: "Erikoismuotoilu/ Special Stylest: Wetlook, Wispy look, KimK, color lashes, jne. 120€",
+    description: "Lengths: 6–16 mm | Curls: C,CC,D",
+    image: IconTitle,
   },
   {
     name: "Volume/Hybrid Maintenance",
     description:
-      "-Huolto 60 min (n. 2 vk): 55€ -Huolto 75 min (n. 3 vk) 60€ -Pitkähuolto 75 min (n. 4 vk): 70€ Pituudet: 6–16 mm | Kaaret: C,CC,D",
-    image: image3,
+      "- Approx. 60 min 2 weeks: 55€\n- Approx. 75 min 3 weeks: 60€\n- Long 75 min (approx. 4 weeks): 70€\n\nLengths: 6–16 mm | Curls: C,CC,D",
+    image: IconTitle,
   },
   {
     name: "Volyymihuolto toisesta salongista max. 3 vk/ Volume Lash Maintenance from Another Salon max. 3 weeks (75 min) 75 €",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image4,
+    description: "Lengths: 6–16 mm | Curls: C,CC,D",
+    image: IconTitle,
   },
   {
     name: "Megavolyymit (9–18D)/ Mega Volume Lashes (9–18D) (180 min) 150 €",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image5,
+    description: "Lengths: 6–16 mm | Curls: C,CC,D",
+    image: IconTitle,
   },
   {
     name: "Mega Volume Maintenance",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image6,
+      "- Approx. 2 weeks: 80€ (90 min)\n- Approx. 3 weeks: 105€ (105min)\n\nLengths: 6–16 mm | Curls: C,CC,D",
+    image: IconTitle,
+  },
+  {
+    name: "Klassinen ripsienpidennys/ Classic Lash Extensions (120 min) 95 €",
+    description: "Lengths: 6–16 mm | Curls: C, CC, D",
+    image: IconTitle,
   },
   {
     name: "Classic Maintenance",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "- Quick 60 min (approx. 2 weeks): 40€\n- Approx. 75 min (3 weeks): 55€\n\nLengths: 6–16 mm | Curls: C,CC,D",
     image: IconTitle,
   },
 ];
@@ -114,8 +117,8 @@ const PriceLists = ({ setSelectedPage }: Props) => {
             EYE BROWN
           </p>
         </div>
-        <div className="mt-10 mb-20 h-[353px] w-full overflow-x-hidden overflow-y-hidden">
-          <ul className="flex w-auto justify-center">
+        <div className="mt-10 mb-10 h-[230px] w-full overflow-x-auto overflow-y-hidden md:mb-20 md:h-[353px] md:overflow-x-hidden">
+          <ul className="min-w-max flex md:w-auto md:justify-center">
             {priceEyeBrown.map((item: PriceType, index) => (
               <Price
                 key={`${item.name}-${index}`}
@@ -131,8 +134,8 @@ const PriceLists = ({ setSelectedPage }: Props) => {
             EYE LASH
           </p>
         </div>
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-          <ul className="w-[3500px] ">
+        <div className="mt-10 h-[230px] w-full overflow-x-auto overflow-y-hidden md:h-[353px]">
+          <ul className="flex min-w-max space-x-4 ">
             {priceEyeLash.map((item: PriceType, index) => (
               <Price
                 key={`${item.name}-${index}`}
